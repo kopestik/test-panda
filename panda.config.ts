@@ -1,3 +1,4 @@
+import { iconsRecipe } from "@/recipes/icons.recipe";
 import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
@@ -12,7 +13,11 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      slotRecipes: {
+        icons: iconsRecipe,
+      },
+    },
   },
 
   jsxFramework: "react",
